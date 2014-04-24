@@ -3,7 +3,7 @@ function ghost_create_post_type() {
 	$cpt_holder = array();
 	//$cpt_holder[] = array( Single, Plural, slug, array( supports ), public, etc );
 	$cpt_holder[]	= array( 'Shirt', 'Shirts', 'shirt', array( 'title', 'editor', 'thumbnail', 'revisions' ), true );
-  $cpt_holder[]	= array( 'Pant', 'Pants', 'pant', array( 'title', 'editor', 'revisions' ), true ); 
+	$cpt_holder[]	= array( 'Pant', 'Pants', 'pant', array( 'title', 'editor', 'revisions' ), true ); 
 	foreach ( $cpt_holder as $cpt ) {
 		register_post_type( $cpt[2],				   
 			array(
